@@ -1,0 +1,127 @@
+/* General Body and Page Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #2f3136;
+    color: white;
+  }
+  
+  /* Top Menu */
+  .top-menu {
+    background-color: #23272a;
+    padding: 10px 20px;
+    text-align: left;
+  }
+  
+  .top-menu .home-link {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .top-menu .home-link:hover {
+    color: #7289da;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 80px;
+    background-color: #23272a;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar-logo {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-logo .logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .sidebar-logo .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Main Content Area */
+  .main-content {
+    flex: 1;
+    background-color: #36393f;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header h1 {
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  /* Blog Post List */
+  .blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .blog-post {
+    background-color: #40444b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .blog-post h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post a {
+    color: #7289da;
+    text-decoration: none;
+  }
+  
+  .blog-post a:hover {
+    text-decoration: underline;
+  }
+  
+  .blog-post p {
+    color: #b9bbbe;
+    font-size: 1.1em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .sidebar-logo {
+      margin-right: 15px;
+    }
+  
+    .main-content {
+      margin-top: 20px;
+    }
+  
+    .blog-post h2 {
+      font-size: 1.5em;
+    }
+  }
+  
