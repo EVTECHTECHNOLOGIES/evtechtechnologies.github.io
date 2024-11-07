@@ -1,5 +1,24 @@
 User-agent: *
-Disallow: /private/
 Allow: /
+Allow: /about/
+Allow: /contact/
+Allow: /blogs/
+Allow: /blogs/
 
+# Block certain files and directories from being indexed
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cgi-bin/
+Disallow: /scripts/
+
+# Block specific file types from being indexed
+Disallow: /*.exe$
+Disallow: /*.zip$
+Disallow: /*.pdf$
+Disallow: /*.png$
+Disallow: /*.ico$
+Disallow: /*.html$
+
+# Sitemap location
 Sitemap: https://evtechtechnologies.com/sitemap.xml
