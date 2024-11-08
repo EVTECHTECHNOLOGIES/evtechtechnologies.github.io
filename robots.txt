@@ -18,7 +18,6 @@ Disallow: /*.zip$
 Disallow: /*.pdf$
 Disallow: /*.png$
 Disallow: /*.ico$
-Disallow: /*.html$
 
 # Sitemap location
 Sitemap: https://evtechtechnologies.com/sitemap.xml
