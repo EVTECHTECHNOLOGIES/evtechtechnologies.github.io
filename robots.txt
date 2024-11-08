@@ -3,7 +3,6 @@ Allow: /
 Allow: /about/
 Allow: /contact/
 Allow: /blogs/
-Allow: /blogs/
 
 # Block certain files and directories from being indexed
 Disallow: /admin/
